@@ -1,0 +1,15 @@
+<launch>
+
+  <!-- 2018 Path Planning Algorithms -->
+  <include file="$(find theseus)/launch/rospathplanner.launch"/>
+
+  <!-- 2018 Ground Station -->
+  <include file="$(find theseus)/launch/groundstation.launch"/>
+
+  <!-- Simulation Base -->
+  <include file="$(find rosplane_sim)/launch/fixedwing.launch">
+    <arg name="show_gui" value="false"/>
+    <arg name="sim_paused" value="false"/>
+  </include>
+
+</launch>
