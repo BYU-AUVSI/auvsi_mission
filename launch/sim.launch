@@ -12,4 +12,6 @@
     <arg name="sim_paused" value="false"/>
   </include>
 
+  <include file="$(find interop_pkg)/launch/full.launch"/>
+
 </launch>
